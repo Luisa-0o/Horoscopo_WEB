@@ -2,24 +2,22 @@
 
 namespace Database\Seeders;
 
+use App\Models\Signo;
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // Primero los 12 signos
+        $this->call(SignoSeeder::class);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        // Usuario de prueba (contraseña: password)
+        User::updateOrCreate(['email' => 'test@example.com'], [
+            'name' => 'Usuario de Prueba',
+            'password' => 'password',
+            'signo_id' => Signo::where('slug', 'leo')->value('id'),
         ]);
     }
 }

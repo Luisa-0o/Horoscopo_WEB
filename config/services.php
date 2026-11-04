@@ -35,4 +35,10 @@ return [
         ],
     ],
 
+    // API de horóscopo: https://api-ninjas.com/api/horoscope
+    'ninjas' => [
+        'key' => env('NINJAS_API_KEY'),
+        'url' => 'https://api.api-ninjas.com/v1/horoscope',
+    ],
+
 ];

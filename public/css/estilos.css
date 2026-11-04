@@ -1,0 +1,109 @@
+/* Estilos de Horóscopo Web */
+
+body {
+    background-color: #f5f3fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra {
+    background-color: #5b2c83;
+}
+
+.bg-morado {
+    background-color: #6f42c1;
+}
+
+.btn-morado {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.btn-morado:hover {
+    background-color: #5b2c83;
+    color: white;
+}
+
+/* Portada de la landing */
+.portada {
+    background: linear-gradient(135deg, #5b2c83, #b56fd6);
+    color: white;
+    border-radius: 10px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.simbolo {
+    font-size: 40px;
+}
+
+.tarjeta-signo {
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+.tarjeta-signo:hover {
+    transform: scale(1.03);
+    border-color: #6f42c1;
+}
+
+.tarjeta-signo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Formularios de login y registro */
+.caja-formulario {
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+/* Menú del dashboard */
+.menu-lateral {
+    background-color: white;
+    min-height: calc(100vh - 56px);
+    border-right: 1px solid #ddd;
+}
+
+.menu-lateral .nav-link {
+    color: #333;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-lateral .nav-link:hover,
+.menu-lateral .nav-link.activo {
+    background-color: #ece4f7;
+    color: #5b2c83;
+}
+
+.foto-perfil {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6f42c1;
+}
+
+.foto-mini {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imagen-signo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.texto-lectura {
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #faf7ff;
+    border-left: 4px solid #6f42c1;
+    padding: 15px;
+}
